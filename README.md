@@ -1,7 +1,10 @@
-# test coverage for  [gulp-compile-handlebars (v0.6.1)](https://github.com/kaanon/gulp-compile-handlebars)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-compile-handlebars.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-compile-handlebars) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-compile-handlebars.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-compile-handlebars)
+# npmtest-gulp-compile-handlebars
+
+#### test coverage for  [gulp-compile-handlebars (v0.6.1)](https://github.com/kaanon/gulp-compile-handlebars)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-compile-handlebars.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-compile-handlebars) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-compile-handlebars.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-compile-handlebars)
+
 #### Compile Handlebars templates to file - gulp plugin
 
-[![NPM](https://nodei.co/npm/gulp-compile-handlebars.png?downloads=true)](https://www.npmjs.com/package/gulp-compile-handlebars)
+[![NPM](https://nodei.co/npm/gulp-compile-handlebars.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-compile-handlebars)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-gulp-compile-handlebars/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-compile-handlebars/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-gulp-compile-handlebars%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-compile-handlebars/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-compile-handlebars%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-compile-handlebars/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/test-report.html](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-gulp-compile-handlebars/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-compile-handlebars/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-compile-handlebars/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-compile-handlebars/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +37,6 @@
 {
     "author": {
         "name": "Kaanon MacFarlane",
-        "email": "kaanonm@gmail.com",
         "url": "http://kaanon.com"
     },
     "bugs": {
@@ -68,13 +76,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "kaanon",
-            "email": "kaanonm@gmail.com"
+            "name": "kaanon"
         }
     ],
     "name": "gulp-compile-handlebars",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/kaanon/gulp-compile-handlebars.git"
