@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-gulp-compile-handlebars/gulp-compile-handlebars/index.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-gulp-compile-handlebars/node_modules/gulp-compile-handlebars/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-gulp-compile-handlebars">npmtest-gulp-compile-handlebars (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-compile-handlebars/gulp-compile-handlebars/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-compile-handlebars/node_modules/gulp-compile-handlebars/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">11.39% <small>(9 / 79)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-gulp-compile-handlebars/gulp-compile-handlebars/</a> » index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-gulp-compile-handlebars/node_modules/gulp-compile-handlebars/</a> &#187; index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -509,83 +511,83 @@ var fs = require('fs');
 var extend = require('util')._extend;
 var path = require('path');
 &nbsp;
-<span class="fstat-no" title="function not covered">function handlebars(data, opts) {</span>
+<span class="fstat-no" title="function not covered" >function handlebars(data, opts) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var options = opts || {};</span>
+<span class="cstat-no" title="statement not covered" >	var options = opts || {};</span>
 	    
 	//Go through a partials object
-<span class="cstat-no" title="statement not covered">	if(options.partials){</span>
-<span class="cstat-no" title="statement not covered">		for(var p in options.partials){</span>
-<span class="cstat-no" title="statement not covered">			Handlebars.registerPartial(p, options.partials[p]);</span>
+<span class="cstat-no" title="statement not covered" >	if(options.partials){</span>
+<span class="cstat-no" title="statement not covered" >		for(var p in options.partials){</span>
+<span class="cstat-no" title="statement not covered" >			Handlebars.registerPartial(p, options.partials[p]);</span>
 		}
 	}
 	//Go through a helpers object
-<span class="cstat-no" title="statement not covered">	if(options.helpers){</span>
-<span class="cstat-no" title="statement not covered">		for(var h in options.helpers){</span>
-<span class="cstat-no" title="statement not covered">			Handlebars.registerHelper(h, options.helpers[h]);</span>
+<span class="cstat-no" title="statement not covered" >	if(options.helpers){</span>
+<span class="cstat-no" title="statement not covered" >		for(var h in options.helpers){</span>
+<span class="cstat-no" title="statement not covered" >			Handlebars.registerHelper(h, options.helpers[h]);</span>
 		}
 	}
 &nbsp;
 	// Do not search for more than 10 nestings
-<span class="cstat-no" title="statement not covered">	var maxDepth = 10;</span>
+<span class="cstat-no" title="statement not covered" >	var maxDepth = 10;</span>
 	// Process only files with given extension names
-<span class="cstat-no" title="statement not covered">	var allowedExtensions = ['hb', 'hbs', 'handlebars', 'html'];</span>
+<span class="cstat-no" title="statement not covered" >	var allowedExtensions = ['hb', 'hbs', 'handlebars', 'html'];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var isDir = <span class="fstat-no" title="function not covered">function (filename) {</span></span>
-<span class="cstat-no" title="statement not covered">		var stats = fs.statSync(filename);</span>
-<span class="cstat-no" title="statement not covered">		return stats &amp;&amp; stats.isDirectory();</span>
+<span class="cstat-no" title="statement not covered" >	var isDir = <span class="fstat-no" title="function not covered" >function (filename) {</span></span>
+<span class="cstat-no" title="statement not covered" >		var stats = fs.statSync(filename);</span>
+<span class="cstat-no" title="statement not covered" >		return stats &amp;&amp; stats.isDirectory();</span>
 	};
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var isHandlebars = <span class="fstat-no" title="function not covered">function (filename) {</span></span>
-<span class="cstat-no" title="statement not covered">		return allowedExtensions.indexOf(filename.split('.').pop()) !== -1;</span>
+<span class="cstat-no" title="statement not covered" >	var isHandlebars = <span class="fstat-no" title="function not covered" >function (filename) {</span></span>
+<span class="cstat-no" title="statement not covered" >		return allowedExtensions.indexOf(filename.split('.').pop()) !== -1;</span>
 	};
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var partialName = <span class="fstat-no" title="function not covered">function (filename, base) {</span></span>
-<span class="cstat-no" title="statement not covered">		var name = path.join(path.dirname(filename), path.basename(filename, path.extname(filename)));</span>
-<span class="cstat-no" title="statement not covered">		if (name.indexOf(base) === 0) {</span>
-<span class="cstat-no" title="statement not covered">			name = name.slice(base.length);</span>
+<span class="cstat-no" title="statement not covered" >	var partialName = <span class="fstat-no" title="function not covered" >function (filename, base) {</span></span>
+<span class="cstat-no" title="statement not covered" >		var name = path.join(path.dirname(filename), path.basename(filename, path.extname(filename)));</span>
+<span class="cstat-no" title="statement not covered" >		if (name.indexOf(base) === 0) {</span>
+<span class="cstat-no" title="statement not covered" >			name = name.slice(base.length);</span>
 		}
 		// Change the name of the partial to use / in the partial name, not \
-<span class="cstat-no" title="statement not covered">		name = name.replace(/\\/g, '/');</span>
+<span class="cstat-no" title="statement not covered" >		name = name.replace(/\\/g, '/');</span>
 &nbsp;
 		// Remove leading _ and / character
-<span class="cstat-no" title="statement not covered">		var firstChar = name.charAt(0);</span>
-<span class="cstat-no" title="statement not covered">		if( firstChar === '_' || firstChar === '/'  ){</span>
-<span class="cstat-no" title="statement not covered">			name = name.substring(1);</span>
+<span class="cstat-no" title="statement not covered" >		var firstChar = name.charAt(0);</span>
+<span class="cstat-no" title="statement not covered" >		if( firstChar === '_' || firstChar === '/'  ){</span>
+<span class="cstat-no" title="statement not covered" >			name = name.substring(1);</span>
 		}
 		
-<span class="cstat-no" title="statement not covered">		return name;</span>
+<span class="cstat-no" title="statement not covered" >		return name;</span>
 	};
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var registerPartial = <span class="fstat-no" title="function not covered">function (filename, base) {</span></span>
-<span class="cstat-no" title="statement not covered">		if (!isHandlebars(filename)) { <span class="cstat-no" title="statement not covered">return; </span>}</span>
-<span class="cstat-no" title="statement not covered">		var name = partialName(filename, base);</span>
-<span class="cstat-no" title="statement not covered">		var template = fs.readFileSync(filename, 'utf8');</span>
+<span class="cstat-no" title="statement not covered" >	var registerPartial = <span class="fstat-no" title="function not covered" >function (filename, base) {</span></span>
+<span class="cstat-no" title="statement not covered" >		if (!isHandlebars(filename)) { <span class="cstat-no" title="statement not covered" >return; </span>}</span>
+<span class="cstat-no" title="statement not covered" >		var name = partialName(filename, base);</span>
+<span class="cstat-no" title="statement not covered" >		var template = fs.readFileSync(filename, 'utf8');</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">		Handlebars.registerPartial(name, template);</span>
+<span class="cstat-no" title="statement not covered" >		Handlebars.registerPartial(name, template);</span>
 	};
 &nbsp;
-<span class="cstat-no" title="statement not covered">	var registerPartials = <span class="fstat-no" title="function not covered">function (dir, base, depth) {</span></span>
-<span class="cstat-no" title="statement not covered">		if (depth &gt; maxDepth) { <span class="cstat-no" title="statement not covered">return; </span>}</span>
-<span class="cstat-no" title="statement not covered">		base = base || dir;</span>
-<span class="cstat-no" title="statement not covered">		fs.readdirSync(dir).forEach(<span class="fstat-no" title="function not covered">function (basename) {</span></span>
-<span class="cstat-no" title="statement not covered">			var filename = path.join(dir, basename);</span>
-<span class="cstat-no" title="statement not covered">			if (isDir(filename)) {</span>
-<span class="cstat-no" title="statement not covered">				registerPartials(filename, base);</span>
+<span class="cstat-no" title="statement not covered" >	var registerPartials = <span class="fstat-no" title="function not covered" >function (dir, base, depth) {</span></span>
+<span class="cstat-no" title="statement not covered" >		if (depth &gt; maxDepth) { <span class="cstat-no" title="statement not covered" >return; </span>}</span>
+<span class="cstat-no" title="statement not covered" >		base = base || dir;</span>
+<span class="cstat-no" title="statement not covered" >		fs.readdirSync(dir).forEach(<span class="fstat-no" title="function not covered" >function (basename) {</span></span>
+<span class="cstat-no" title="statement not covered" >			var filename = path.join(dir, basename);</span>
+<span class="cstat-no" title="statement not covered" >			if (isDir(filename)) {</span>
+<span class="cstat-no" title="statement not covered" >				registerPartials(filename, base);</span>
 			} else {
-<span class="cstat-no" title="statement not covered">				registerPartial(filename, base);</span>
+<span class="cstat-no" title="statement not covered" >				registerPartial(filename, base);</span>
 			}
 		});
 	};
 &nbsp;
 	// Go through a partials directory array
-<span class="cstat-no" title="statement not covered">	if(options.batch){</span>
+<span class="cstat-no" title="statement not covered" >	if(options.batch){</span>
 		// Allow single string
-<span class="cstat-no" title="statement not covered">		if(typeof options.batch === 'string') <span class="cstat-no" title="statement not covered">options.batch = [options.batch];</span></span>
+<span class="cstat-no" title="statement not covered" >		if(typeof options.batch === 'string') <span class="cstat-no" title="statement not covered" >options.batch = [options.batch];</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">		options.batch.forEach(<span class="fstat-no" title="function not covered">function (dir) {</span></span>
-<span class="cstat-no" title="statement not covered">			dir = path.normalize(dir);</span>
-<span class="cstat-no" title="statement not covered">			registerPartials(dir, dir, 0);</span>
+<span class="cstat-no" title="statement not covered" >		options.batch.forEach(<span class="fstat-no" title="function not covered" >function (dir) {</span></span>
+<span class="cstat-no" title="statement not covered" >			dir = path.normalize(dir);</span>
+<span class="cstat-no" title="statement not covered" >			registerPartials(dir, dir, 0);</span>
 		});
 	}
 &nbsp;
@@ -594,51 +596,51 @@ var path = require('path');
 	 * @method mockPartials
 	 * @param  {string}     content Contents of handlebars file
 	 */
-<span class="cstat-no" title="statement not covered">	var mockPartials = <span class="fstat-no" title="function not covered">function(content){</span></span>
-<span class="cstat-no" title="statement not covered">		var regex = /{{&gt; (.*)}}/gim, match, partial;</span>
-<span class="cstat-no" title="statement not covered">		if(content.match(regex)){</span>
-<span class="cstat-no" title="statement not covered">			while((match = regex.exec(content)) !== null){</span>
-<span class="cstat-no" title="statement not covered">				partial = match[1];</span>
+<span class="cstat-no" title="statement not covered" >	var mockPartials = <span class="fstat-no" title="function not covered" >function(content){</span></span>
+<span class="cstat-no" title="statement not covered" >		var regex = /{{&gt; (.*)}}/gim, match, partial;</span>
+<span class="cstat-no" title="statement not covered" >		if(content.match(regex)){</span>
+<span class="cstat-no" title="statement not covered" >			while((match = regex.exec(content)) !== null){</span>
+<span class="cstat-no" title="statement not covered" >				partial = match[1];</span>
 				//Only register an empty partial if the partial has not already been registered
-<span class="cstat-no" title="statement not covered">				if(!Handlebars.partials.hasOwnProperty(partial)){</span>
-<span class="cstat-no" title="statement not covered">					Handlebars.registerPartial(partial, '');</span>
+<span class="cstat-no" title="statement not covered" >				if(!Handlebars.partials.hasOwnProperty(partial)){</span>
+<span class="cstat-no" title="statement not covered" >					Handlebars.registerPartial(partial, '');</span>
 				}
 			}
 		}
 	};
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered">	return through.obj(<span class="fstat-no" title="function not covered">function (file, enc, cb) {</span></span>
-<span class="cstat-no" title="statement not covered">		var _data = extend({}, data);</span>
+<span class="cstat-no" title="statement not covered" >	return through.obj(<span class="fstat-no" title="function not covered" >function (file, enc, cb) {</span></span>
+<span class="cstat-no" title="statement not covered" >		var _data = extend({}, data);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">		if (file.isNull()) {</span>
-<span class="cstat-no" title="statement not covered">			this.push(file);</span>
-<span class="cstat-no" title="statement not covered">			return cb();</span>
+<span class="cstat-no" title="statement not covered" >		if (file.isNull()) {</span>
+<span class="cstat-no" title="statement not covered" >			this.push(file);</span>
+<span class="cstat-no" title="statement not covered" >			return cb();</span>
 		}
 &nbsp;
-<span class="cstat-no" title="statement not covered">		if (file.isStream()) {</span>
-<span class="cstat-no" title="statement not covered">			this.emit('error', new gutil.PluginError('gulp-compile-handlebars', 'Streaming not supported'));</span>
-<span class="cstat-no" title="statement not covered">			return cb();</span>
+<span class="cstat-no" title="statement not covered" >		if (file.isStream()) {</span>
+<span class="cstat-no" title="statement not covered" >			this.emit('error', new gutil.PluginError('gulp-compile-handlebars', 'Streaming not supported'));</span>
+<span class="cstat-no" title="statement not covered" >			return cb();</span>
 		}
 &nbsp;
-<span class="cstat-no" title="statement not covered">		try {</span>
-<span class="cstat-no" title="statement not covered">			var fileContents = file.contents.toString();</span>
-<span class="cstat-no" title="statement not covered">			if(options.ignorePartials){</span>
-<span class="cstat-no" title="statement not covered">				mockPartials(fileContents);</span>
+<span class="cstat-no" title="statement not covered" >		try {</span>
+<span class="cstat-no" title="statement not covered" >			var fileContents = file.contents.toString();</span>
+<span class="cstat-no" title="statement not covered" >			if(options.ignorePartials){</span>
+<span class="cstat-no" title="statement not covered" >				mockPartials(fileContents);</span>
 			}
 &nbsp;
 			// Enable gulp-data usage, Extend default data with data from file.data
-<span class="cstat-no" title="statement not covered">			if(file.data){</span>
-<span class="cstat-no" title="statement not covered">				_data = extend(_data, file.data);</span>
+<span class="cstat-no" title="statement not covered" >			if(file.data){</span>
+<span class="cstat-no" title="statement not covered" >				_data = extend(_data, file.data);</span>
 			}
-<span class="cstat-no" title="statement not covered">			var template = Handlebars.compile(fileContents, options.compile);</span>
-<span class="cstat-no" title="statement not covered">			file.contents = new Buffer(template(_data));</span>
+<span class="cstat-no" title="statement not covered" >			var template = Handlebars.compile(fileContents, options.compile);</span>
+<span class="cstat-no" title="statement not covered" >			file.contents = new Buffer(template(_data));</span>
 		} catch (err) {
-<span class="cstat-no" title="statement not covered">			this.emit('error', new gutil.PluginError('gulp-compile-handlebars', err));</span>
+<span class="cstat-no" title="statement not covered" >			this.emit('error', new gutil.PluginError('gulp-compile-handlebars', err));</span>
 		}
 &nbsp;
-<span class="cstat-no" title="statement not covered">		this.push(file);</span>
-<span class="cstat-no" title="statement not covered">		cb();</span>
+<span class="cstat-no" title="statement not covered" >		this.push(file);</span>
+<span class="cstat-no" title="statement not covered" >		cb();</span>
 	});
 }
 &nbsp;
@@ -648,11 +650,10 @@ handlebars.Handlebars = Handlebars;
 module.exports = handlebars;
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 23:36:35 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 05:05:07 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
