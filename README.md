@@ -1,6 +1,6 @@
 # npmtest-gulp-compile-handlebars
 
-#### test coverage for  [gulp-compile-handlebars (v0.6.1)](https://github.com/kaanon/gulp-compile-handlebars)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-compile-handlebars.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-compile-handlebars) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-compile-handlebars.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-compile-handlebars)
+#### basic test coverage for  [gulp-compile-handlebars (v0.6.1)](https://github.com/kaanon/gulp-compile-handlebars)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-compile-handlebars.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-compile-handlebars) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-compile-handlebars.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-compile-handlebars)
 
 #### Compile Handlebars templates to file - gulp plugin
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-compile-handlebars/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-compile-handlebars/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-compile-handlebars/build/coverage.html/index.html)
 
@@ -88,7 +88,8 @@
     "scripts": {
         "test": "mocha"
     },
-    "version": "0.6.1"
+    "version": "0.6.1",
+    "bin": {}
 }
 ```
 
